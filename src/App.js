@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css';
-import ExpenseItemCardList from './components/ExpenseItemCardList';
+import ExpenseItemCardList from './containers/ExpenseItemCardList';
+import NewExpense from './components/NewExpense/NewExpense';
 
 function App() {
 
@@ -14,13 +15,13 @@ function App() {
     {
       id: 2,
       title: 'Toothbrush',
-      amount: 12.195,
+      amount: 12.15,
       date:new Date(2021,4,22),
     },
     {
       id: 3,
       title: 'Bar Soap',
-      amount: 18.50,
+      amount: 18.23,
       date:new Date(2021,2,25),
     },
     {
@@ -35,6 +36,7 @@ function App() {
 
   return (
       <div className="App">
+        <NewExpense/>
         <ExpenseItemCardList expenses = {expenses}/>
       </div>
   );

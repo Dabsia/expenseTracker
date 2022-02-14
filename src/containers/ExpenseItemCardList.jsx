@@ -1,5 +1,5 @@
 import React from 'react';
-import ExpenseItem from './ExpenseItem';
+import ExpenseItem from '../components/ExpenseItem';
 import './ExpenseItemCardList.css'
 const ExpenseItemCardList = ({expenses}) => {
 
