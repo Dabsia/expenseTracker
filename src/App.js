@@ -3,6 +3,7 @@ import './App.css';
 import ExpenseItemCardList from './containers/ExpenseItemCardList';
 import NewExpense from './components/NewExpense/NewExpense';
 
+
 function App() {
 
   const expenses = [
@@ -37,11 +38,10 @@ function App() {
     console.log(expense);
   }
 
-
-
   return (
       <div className="App">
         <NewExpense onAddExpense = {addExpenseHandler} />
+
         <ExpenseItemCardList expenses = {expenses}/>
       </div>
   );
