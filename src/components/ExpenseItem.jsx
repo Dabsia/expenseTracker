@@ -2,7 +2,7 @@ import React from 'react';
 import './ExpenseItem.css'
 
 
-const ExpenseItem = ({expense}) => { 
+const ExpenseItem = ({expense}) => {  
 
     // const [name, setTitle] = useState('');
 
